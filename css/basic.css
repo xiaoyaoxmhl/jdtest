@@ -1,0 +1,53 @@
+
+/*通用样式*/
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+
+    -webkit-tap-highlight-color: transparent; /*清除点击默认的高亮效果*/
+
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    /*手机默认的字体*/
+    font-family: "Microsoft Sans Serif";
+    color: #000;
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+input,textarea{
+    border: none;
+    resize: none;       /*是否可由用户调整元素的尺寸。*/
+    outline: none;      /*清除默认选中框的效果*/
+
+     -webkit-appearance: none;  /*清除浏览器默认的样式*/
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: '.';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+/*图标设置*/
+[class^="icon"]{
+    background: url("../images/sprites.png") no-repeat;
+    background-size: 200px 200px;   /*背景图片的尺寸,原400*400缩小到200*200*/
+}
+
