@@ -1,19 +1,24 @@
+body{
+    background: #f5f5f5;
+}
 
 .jd_layout{
     min-width: 300px;
     max-width: 640px;
     margin: 0 auto;
-    position: relative;   /*以此作为定位*/
+    position: relative;
 }
-/*搜索头部*/
+/*???????*/
 .jd_header{
+    width: 100%;
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     height: 40px;
+    z-index: 999;
 }
-
-.jd_header,.jd_header_box{
+/*?????????????*/
+.jd_header .jd_header_box{
     min-width: 300px;
     max-width: 640px;
     margin: 0 auto;
@@ -21,11 +26,10 @@
     background: rgba(201,21,35,0.85);
     height: 40px;
 }
-
 /*logo*/
 .jd_header .jd_header_box .icon_logo{
-    background-position: 0 -103px;
-    width:60px;
+    background-position:0 -103px;
+    width: 60px;
     height: 36px;
     display: block;
 
@@ -33,7 +37,6 @@
     top: 4px;
     left: 10px;
 }
-
 .jd_header form{
     width: 100%;
     height: 40px;
@@ -41,19 +44,17 @@
     padding-right: 55px;
     position: relative;
 }
-
-/*搜索按钮*/
+/*???????*/
 .jd_header form .icon_search{
-    background-position: -60px -109px;
-    width:20px;
+    background-position:-60px -109px;
+    width: 20px;
     height: 20px;
     display: block;
 
-    position: absolute;         /*这里脱离文档流,不会影响到 input布局*/
+    position: absolute;
     top: 10px;
     left: 85px;
 }
-
 .jd_header form input{
     width: 100%;
     height: 30px;
@@ -62,7 +63,7 @@
     padding-left: 30px;
 }
 
-/*登录*/
+/*??�*/
 .jd_header .login{
     width: 50px;
     height: 40px;
@@ -70,15 +71,14 @@
     text-align: center;
     line-height: 40px;
     font-size: 15px;
-    color: #ffffff;
+    color: #fff;
 
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
 }
 
-/*轮播图*/
-
+/*????*/
 .jd_banner{
     width: 100%;
     overflow: hidden;
@@ -96,6 +96,7 @@
     display: block;
 }
 
+/*??*/
 .jd_banner ul:last-child{
     width: 118px;
     height: 6px;
@@ -121,20 +122,17 @@
     background: #fff;
 }
 
-/*轮播图结束*/
-
-/*导航栏*/
+/*??????*/
 .jd_nav{
     height: 150px;
-    width: 100%;            /*100%*/
+    width: 100%;
     border-bottom: 1px solid #e0e0e0;
     padding: 0 3.125%;
     background: #fff;
     padding-top: 11px;
 }
-
 .jd_nav ul{
-    width: 100%;        /*100%*/
+    width: 100%;
 }
 .jd_nav ul li{
     width: 25%;
@@ -144,8 +142,9 @@
 .jd_nav ul li a{
     display: block;
     width: 100%;
-    height: 100%;       /*100%*/
+    height: 100%;
     text-align: center;
+
 }
 .jd_nav ul li a img{
     display: block;
@@ -158,5 +157,182 @@
     color: #666;
     margin-top: 6px;
 }
+/*???????*/
+.jd_product{
+    margin: 0 5px;
+}
+/*??????�????????*/
+.jd_product .jd_product_box{
+    box-shadow: 0 0 1px 1px #e0e0e0;
+    margin-top: 8px;
+    background: #fff;
+}
+/*?????????*/
+.jd_product .jd_product_box .product_top{
+    height: 32px;
+    border-bottom:1px solid #e0e0e0;
+    position: relative;
+}
+/*�????*/
+.jd_product .jd_product_box .product_top.no_bor{
+    border-bottom:none;
+}
 
-/*导航栏结束*/
+.jd_product .jd_product_box .product_top h3{
+    font-size: 15px;
+    color: #666;
+    padding-left: 15px;
+    font-weight: inherit;
+    line-height: 32px;
+}
+.jd_product .jd_product_box .product_top h3::before{
+     content: "";
+     display: block;
+     width: 3px;
+     height: 12px;
+     background: #d8505c;
+
+     position: absolute;
+     top: 10px;
+     left: 8px;
+ }
+
+
+.jd_product .jd_product_box .product_bot{
+
+}
+
+
+/*???*/
+.jd_secondKill{
+
+}
+.jd_secondKill .jd_secondKill_left{
+    float: left;
+}
+.jd_secondKill .jd_secondKill_left .sk_icon{
+    background: url("../images/seckill-icon.png") no-repeat;
+    background-size: 16px 20px;
+    width: 16px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin-left: 8px;
+    margin-top: 6px;
+
+}
+.jd_secondKill .jd_secondKill_left .sk_name{
+    font-size: 15px;
+    color: #d8505c;
+    font-weight: inherit;
+    float: left;
+    margin-left: 8px;
+    margin-top: 6px;
+}
+.jd_secondKill .jd_secondKill_left .sk_time{
+    float: left;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.jd_secondKill .jd_secondKill_left .sk_time .num{
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    float: left;
+    line-height: 15px;
+    margin-left: 3px;
+}
+.jd_secondKill .jd_secondKill_left .sk_time .str{
+    display: block;
+    width: 4px;
+    height: 15px;
+    text-align: center;
+    float: left;
+    line-height: 15px;
+    margin-left: 3px;
+}
+
+/*????*/
+.jd_secondKill .jd_secondKill_right{
+    float: right;
+}
+.jd_secondKill .jd_secondKill_right a{
+    line-height: 32px;
+    margin-right: 10px;
+}
+/*???????*/
+.jd_secondKill .product_bot{
+    width: 100%;
+}
+.jd_secondKill .product_bot ul{
+    width: 100%;
+    padding: 10px 0;
+}
+.jd_secondKill .product_bot ul li{
+    width: 33.333%;
+    float: left;
+}
+.jd_secondKill .product_bot ul li a{
+    width: 100%;
+}
+
+.jd_secondKill .product_bot ul li a .img_box{
+    width: 100%;
+    border-right: 1px solid #e0e0e0;
+}
+.jd_secondKill .product_bot ul li:last-child a .img_box{
+    border-right:none;
+}
+.jd_secondKill .product_bot ul li a .img_box img{
+    width: 64%;
+    display: block;
+    margin: 0 auto;
+}
+
+.jd_secondKill .product_bot ul li a .now_price{
+    color: #d8505c;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 3px;
+}
+.jd_secondKill .product_bot ul li a .old_price{
+    font-size: 12px;
+    text-decoration: line-through;/*?????*/
+    margin-top: 3px;
+    text-align: center;
+    color: #888;
+}
+/*?????*/
+.jd_product .jd_pd .product_bot{
+    width: 100%;
+}
+/*???????a*/
+.jd_product .jd_pd .product_bot .p_left{
+    width: 50%;
+    float: left;
+}
+/*???????a*/
+.jd_product .jd_pd .product_bot .p_right{
+    width: 50%;
+    float: right;
+}
+/*????*/
+.jd_product .jd_pd .product_bot .b_left{
+    border-left: 1px solid #e0e0e0;
+}
+/*????*/
+.jd_product .jd_pd .product_bot .b_right{
+    border-right: 1px solid #e0e0e0;
+}
+/*?�??*/
+.jd_product .jd_pd .product_bot .b_bottom{
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.jd_product .jd_pd .product_bot a img{
+    width: 100%;
+    display: block;
+}
