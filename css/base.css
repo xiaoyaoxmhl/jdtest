@@ -4,15 +4,15 @@
     margin: 0;
     padding: 0;
 
-    -webkit-tap-highlight-color: transparent;/*Çå³ıµã»÷Ä¬ÈÏµÄ¸ßÁÁĞ§¹û*/
+    -webkit-tap-highlight-color: transparent;/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ÏµÄ¸ï¿½ï¿½ï¿½Ğ§ï¿½ï¿½*/
 
-    -webkit-box-sizing: border-box;/*ÒÔÄãµÄborder¿ªÊ¼¼ÆËãÄãµÄ¿í¶È*/
+    -webkit-box-sizing: border-box;/*ï¿½ï¿½ï¿½ï¿½ï¿½borderï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½*/
 
 }
 
 body{
     font-size: 14px;
-    font-family: "Microsoft YaHei",sans-serif;/*µÚ¶ş¸öÊÇÊÖ»úµÄÒ»¸öÄ¬ÈÏµÄ×ÖÌå*/
+    font-family: "Microsoft YaHei",sans-serif;/*ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ä¬ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½*/
     color: #000;
 }
 
@@ -28,12 +28,12 @@ ul{
 input,textarea{
     border: none;
     resize: none;
-    outline: none;/*Çå³ıÑ¡ÖĞĞ§¹û*/
+    outline: none;/*ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Ğ§ï¿½ï¿½*/
 
-    -webkit-appearance: none;/*Çå³şä¯ÀÀÆ÷Ä¬ÈÏµÄÑùÊ½*/
+    -webkit-appearance: none;/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½Ïµï¿½ï¿½ï¿½Ê½*/
 }
 
-/*Çå³ı¸¡¶¯*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .clearfix::before,
 .clearfix::after{
     content: ".";
@@ -50,3 +50,65 @@ input,textarea{
 }
 
 
+
+/*é¡¶éƒ¨ topBar è®¾ç½®*/
+.jd_topBar{
+    height: 45px;
+    width: 100%;
+    background: url("../images/header-bg.png") repeat-x;
+    background-size: 1px 44px;
+    border-bottom: 1px solid #e0e0e0;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+.jd_topBar .icon_back{
+    height: 44px;
+    width: 40px;
+    background-position: -20px 0;
+    display: block;                 /*  a é»˜è®¤æ˜¯è¡Œå†…å…ƒç´  inline*/
+
+    padding:12px 10px;
+    position: absolute;
+    background-origin:content-box;  /*å†³å®šäº† background-positionä»ä»€ä¹ˆä½ç½®å¼€å§‹ç»˜åˆ¶*/
+    background-clip: content-box;   /*å†³å®šäº†æ˜¾ç¤ºåŒºåŸŸåœ¨ç›’å­æ¨¡å‹çš„ä»€ä¹ˆä½ç½®*/
+}
+.jd_topBar form{
+    width: 100%;
+    height: 44px;
+    padding: 0 40px;
+}
+.jd_topBar input{
+    border: 1px solid #bfbfbf;
+    height: 32px;
+    padding: 0px 8px;
+    margin-top:7px;
+    width: 100%;
+    font-family:sans-serif;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.jd_topBar .icon_menu{
+    height: 20px;
+    width: 20px;;
+    background-position: -60px 0;
+    display: block;
+    position: absolute;
+    right: 0;
+    top:0;
+    margin: 10px 10px;
+}
+
+.jd_topBar h2{
+    width: 100%;
+    height: 44px;
+    line-height: 42px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #000;
+    font-weight: inherit;
+    text-align: center;
+}
