@@ -8,7 +8,6 @@ body{
     margin: 0 auto;
     position: relative;
 }
-/*???????*/
 .jd_header{
     width: 100%;
     position: fixed;
@@ -17,7 +16,6 @@ body{
     height: 40px;
     z-index: 999;
 }
-/*?????????????*/
 .jd_header .jd_header_box{
     min-width: 300px;
     max-width: 640px;
@@ -26,7 +24,6 @@ body{
     background: rgba(201,21,35,0.85);
     height: 40px;
 }
-/*logo*/
 .jd_header .jd_header_box .icon_logo{
     background-position:0 -103px;
     width: 60px;
@@ -44,7 +41,6 @@ body{
     padding-right: 55px;
     position: relative;
 }
-/*???????*/
 .jd_header form .icon_search{
     background-position:-60px -109px;
     width: 20px;
@@ -63,7 +59,6 @@ body{
     padding-left: 30px;
 }
 
-/*??�*/
 .jd_header .login{
     width: 50px;
     height: 40px;
@@ -78,7 +73,6 @@ body{
     right: 0;
 }
 
-/*????*/
 .jd_banner{
     width: 100%;
     overflow: hidden;
@@ -96,7 +90,6 @@ body{
     display: block;
 }
 
-/*??*/
 .jd_banner ul:last-child{
     width: 118px;
     height: 6px;
@@ -122,7 +115,6 @@ body{
     background: #fff;
 }
 
-/*??????*/
 .jd_nav{
     height: 150px;
     width: 100%;
@@ -157,23 +149,20 @@ body{
     color: #666;
     margin-top: 6px;
 }
-/*???????*/
 .jd_product{
     margin: 0 5px;
 }
-/*??????�????????*/
 .jd_product .jd_product_box{
     box-shadow: 0 0 1px 1px #e0e0e0;
     margin-top: 8px;
     background: #fff;
 }
-/*?????????*/
+
 .jd_product .jd_product_box .product_top{
     height: 32px;
     border-bottom:1px solid #e0e0e0;
     position: relative;
 }
-/*�????*/
 .jd_product .jd_product_box .product_top.no_bor{
     border-bottom:none;
 }
@@ -305,29 +294,23 @@ body{
     text-align: center;
     color: #888;
 }
-/*?????*/
 .jd_product .jd_pd .product_bot{
     width: 100%;
 }
-/*???????a*/
 .jd_product .jd_pd .product_bot .p_left{
     width: 50%;
     float: left;
 }
-/*???????a*/
 .jd_product .jd_pd .product_bot .p_right{
     width: 50%;
     float: right;
 }
-/*????*/
 .jd_product .jd_pd .product_bot .b_left{
     border-left: 1px solid #e0e0e0;
 }
-/*????*/
 .jd_product .jd_pd .product_bot .b_right{
     border-right: 1px solid #e0e0e0;
 }
-/*?�??*/
 .jd_product .jd_pd .product_bot .b_bottom{
     border-bottom: 1px solid #e0e0e0;
 }
